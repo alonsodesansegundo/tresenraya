@@ -25,38 +25,47 @@ function comprobar(juego){
     if((juego[0]==juego[1])&&(juego[1]==juego[2])&&(juego[0]!="")){
         alert("Ha ganado el equipo "+juego[0])
         vaciar()
+        return true
     }
     if((juego[3]==juego[4])&&(juego[4]==juego[5])&&(juego[3]!="")){
         alert("Ha ganado el equipo "+juego[3])
         vaciar()
+        return true
     }
     if((juego[6]==juego[7])&&(juego[7]==juego[8])&&(juego[6]!="")){
         alert("Ha ganado el equipo "+juego[6])
         vaciar()
+        return true
     }
     if((juego[0]==juego[3])&&(juego[3]==juego[6])&&(juego[0]!="")){
         alert("Ha ganado el equipo "+juego[0])
         vaciar()
+        return true
     }
     if((juego[1]==juego[4])&&(juego[4]==juego[7])&&(juego[1]!="")){
         alert("Ha ganado el equipo "+juego[1])
         vaciar()
+        return true
     }
     if((juego[2]==juego[5])&&(juego[5]==juego[8])&&(juego[2]!="")){
         alert("Ha ganado el equipo "+juego[2])
         vaciar()
+        return true
     }
     if((juego[0]==juego[4])&&(juego[4]==juego[8])&&(juego[0]!="")){
         alert("Ha ganado el equipo "+juego[0])
         vaciar()
+        return true
     }
     if((juego[2]==juego[4])&&(juego[4]==juego[6])&&(juego[2]!="")){
         alert("Ha ganado el equipo "+juego[2])
         vaciar()
+        return true
     }
     empate(juego)
     if(empate(juego)){
         vaciar()
+        return true
     }
 }
 function empate(juego){
