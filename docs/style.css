@@ -10,10 +10,42 @@
     height: 306px;
     display: flex;
     flex-wrap: wrap;
+    background: #AACBD8
 }
 #body{
     margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: space-around
+    /* align-items: center; */
+    justify-content: space-around;
+}
+h1{
+    text-align: center;
+}
+#todo{
+    display: flex;
+    justify-content: space-around;
+}
+#X{
+    font-size: 20px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+#O{
+    font-size: 20px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+@media (max-width: 600px){
+    #todo{
+        margin: 0 auto;
+        display: inline-block;
+    }
+    #tablero{
+        margin-top: 50%;
+    }
+    #O{
+        margin-top:80%;
+    }
 }
